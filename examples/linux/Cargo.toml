@@ -1,0 +1,13 @@
+[package]
+name = "msl"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+block = "0.1.6"
+libc = "0.2.82"
+objc = "0.2.7"
+structopt = "0.3.21"
+vz-fwk= { path = "../../vz-fwk" }

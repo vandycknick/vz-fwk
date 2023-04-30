@@ -1,12 +1,12 @@
 .PHONY: release
 
 debug:
-	cargo build --example simplevm
-	codesign -f --entitlement virtualization_rs.entitlements -s - target/debug/examples/simplevm
+	cargo build --bin msl
+	codesign -f --entitlement virtualization_rs.entitlements -s - target/debug/msl
 
 release:
-	cargo build --release --example simplevm
-	codesign -f --entitlement virtualization_rs.entitlements -s - target/release/examples/simplevm
+	cargo build --release --bin msl
+	codesign -f --entitlement virtualization_rs.entitlements -s - target/release/msl
 
 check:
 	cargo check

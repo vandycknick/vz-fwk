@@ -1,11 +1,9 @@
-extern crate virtualization_rs;
-
 use block::{Block, ConcreteBlock};
 use libc::sleep;
 use objc::rc::StrongPtr;
 use std::fs::canonicalize;
 use std::sync::{Arc, RwLock};
-use virtualization_rs::{
+use vz_fwk::{
     base::{dispatch_async, dispatch_queue_create, Id, NSError, NSFileHandle, NIL},
     virtualization::{
         boot_loader::VZLinuxBootLoaderBuilder,

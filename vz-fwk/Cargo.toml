@@ -1,0 +1,15 @@
+[package]
+name = "vz-fwk"
+version = "1.0.0"
+authors = ["Nick Van Dyck"]
+edition = "2021"
+license = "MIT"
+description = "High Level Rust API for Virtualization.framework."
+repository = "https://github.com/vandycknick/vz-fwk"
+readme = "../README.md"
+keywords = ["macOS", "Virtualization", "VM"]
+
+[dependencies]
+libc = "0.2.82"
+objc = "0.2.7"
+block = "0.1.6"
