@@ -308,7 +308,7 @@ impl VZVirtualMachine {
         if error.code() != 0 {
             Err(error)
         } else {
-            Ok(ret)
+            Ok(ret == YES)
         }
     }
 
